@@ -1,1 +1,8 @@
-$('h1').slideUp(1000).slideDown(1000);
+/* Preloader Handling */
+(function ($, window) {
+    $(window).on('load', () => {
+        $('#status').fadeOut();
+        $('#preloader').fadeOut();
+
+    })
+})($, window);
