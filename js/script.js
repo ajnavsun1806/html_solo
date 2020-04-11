@@ -1,8 +1,6 @@
 /* Preloader Handling */
-(function ($, window) {
-    $(window).on('load', () => {
-        $('#status').fadeOut();
-        $('#preloader').fadeOut();
 
-    })
-})($, window);
+$(window).on('load', function () {
+	$('#status').fadeOut();
+	$('#preloader').delay(350).fadeOut("slow");
+})

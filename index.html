@@ -1,54 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Meta information goes to this tag -->
 
 <head>
-    <!--       meta tags     -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Important meta tags -->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!--    title of the page    -->
-    <title>Solo - Creative Website</title>
+	<!-- Title -->
+	<title>Solo - Creative Website</title>
 
-    <!--    Favicon    -->
-    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
+	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.css" />
 
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css" />
 
-    <!--  styles -->
-    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div id="status">&nbsp;</div>
-    </div>
 
-    <h1>
-        Welcome to Solo!
-    </h1>
+	<!-- Preloader -->
+	<div id="preloader">
+		<div id="status">&nbsp;</div>
+	</div>
 
-    <p>This is a paragraph</p>
+	<!-- Home -->
+	<section id="home">
 
-    <div>
-        <p> Paragraph inside a div</p>
-    </div>
+		<!-- Background Video -->
+		<video id="home-bg-video" poster="video/solo.jpg" autoplay loop muted>
+			<source src="video/solo.mp4" type="video/mp4">
+			<source src="video/solo.ogv" type="video/ogg">
+			<source src="video/solo.webm" type="video/webm">
+		</video>
 
-    <!-- Libraries JS -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
+		<!-- Overlay -->
+		<div id="home-overlay"></div>
 
-    <!-- Custom JS -->
-    <script src="js/script.js"></script>
+		<!-- Home Content -->
+		<div id="home-content">
+
+			<div id="home-content-inner" class="text-center">
+				<div id="home-heading">
+					<h1 id="home-heading-1">Digital</h1><br>
+					<h1 id="home-heading-2">Creative <span>Agency</span></h1>
+				</div>
+
+				<div id="home-text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo aliquid incidunt mdi.</p>
+				</div>
+
+				<div id="home-btn">
+					<a class="btn btn-general btn-home" href="#about" title="Start Now" role="button">Start Now</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- Arrow Down -->
+		<a href="#about" id="arrow-down">
+			<i class="fa fa-angle-down"></i>
+		</a>
+
+	</section>
+	<!-- Home Ends -->
+	
+	<!-- JQuery -->
+	<script src="js/jquery.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.js"></script>
+
+	<!-- Custom JS -->
+	<script src="js/script.js"></script>
 </body>
 
 </html>
